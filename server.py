@@ -18,7 +18,12 @@ AWESOMENESS = [
 def start_here():
     """Home page."""
 
-    return "<!doctype html><html>Hi! This is the home page.</html>"
+    return """<!doctype html><html>Hi! This is the home page.
+    <p><a href="hello">hello</a></p>
+    
+    
+    </html>"""
+
 
 
 @app.route('/hello')
@@ -49,7 +54,7 @@ def greet_person():
     player = request.args.get("person")
 
     compliment = choice(AWESOMENESS)
-
+    y=x
     return """
     <!doctype html>
     <html>
